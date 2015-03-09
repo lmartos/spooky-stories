@@ -7,7 +7,8 @@
     <nl.spookystoriesinc.coolgame.CoolGameBoardView
         android:id="@+id/game"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent"
+        android:clickable="true" />
 
     <LinearLayout
         android:layout_width="fill_parent"

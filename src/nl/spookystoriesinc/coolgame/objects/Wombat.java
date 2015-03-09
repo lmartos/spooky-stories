@@ -25,7 +25,7 @@ public class Wombat extends GameObject {
 		Log.d(CoolGame.TAG, "Touched wombat");
 
 		// Wombats always move a square to the right
-		int newPosX = getPositionX() + 1;
+		int newPosX = getPositionX();
 		int newPosY = getPositionY();
 
 		// If new position is over the edge of the board, do nothing
@@ -53,4 +53,5 @@ public class Wombat extends GameObject {
 		gameBoard.moveObject(this, newPosX, newPosY);
 		gameBoard.updateView();
 	}
+
 }

@@ -5,6 +5,7 @@ import nl.spookystoriesinc.coolgame.objects.Rock;
 import nl.spookystoriesinc.coolgame.objects.Wombat;
 import nl.spookystoriesinc.model.Game;
 import nl.spookystoriesinc.model.GameBoard;
+import nl.spookystoriesinc.coolgame.CoolGameBoard;
 
 /**
  * Awesome game for the Speelveld-project.
