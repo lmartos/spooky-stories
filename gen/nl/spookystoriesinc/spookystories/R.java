@@ -27,12 +27,27 @@ containing a value of this type.
         public static final int wombat=0x7f020005;
     }
     public static final class id {
-        public static final int game=0x7f050000;
-        public static final int newGameButton=0x7f050002;
-        public static final int scoreTextView=0x7f050001;
+        public static final int LinearLayout1=0x7f05000c;
+        public static final int game=0x7f05000d;
+        public static final int inventoryView1=0x7f05000e;
+        public static final int inventoryViewTile1=0x7f050000;
+        public static final int inventoryViewTile10=0x7f050009;
+        public static final int inventoryViewTile11=0x7f05000a;
+        public static final int inventoryViewTile12=0x7f05000b;
+        public static final int inventoryViewTile2=0x7f050001;
+        public static final int inventoryViewTile3=0x7f050002;
+        public static final int inventoryViewTile4=0x7f050003;
+        public static final int inventoryViewTile5=0x7f050004;
+        public static final int inventoryViewTile6=0x7f050005;
+        public static final int inventoryViewTile7=0x7f050006;
+        public static final int inventoryViewTile8=0x7f050007;
+        public static final int inventoryViewTile9=0x7f050008;
+        public static final int newGameButton=0x7f050010;
+        public static final int scoreTextView=0x7f05000f;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int inventory=0x7f030000;
+        public static final int main=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

@@ -62,6 +62,7 @@ public abstract class GameBoard extends Observable {
 			throw new IllegalArgumentException("Destination already contains an object");
 		}
 		
+		
 		gameBoard[x][y] = obj;
 		obj.setPosition(x,  y);
 	}
