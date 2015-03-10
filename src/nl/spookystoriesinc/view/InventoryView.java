@@ -41,8 +41,8 @@ public class InventoryView extends LinearLayout implements Observer {
 	public void init(Context context){
 		if(!isInEditMode()) {
 		
-			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			inflater.inflate(R.layout.inventory, this);
+			//LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			//inflater.inflate(R.layout.inventory, this);
 		
 		}
 		

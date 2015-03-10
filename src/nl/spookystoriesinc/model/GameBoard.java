@@ -2,6 +2,7 @@ package nl.spookystoriesinc.model;
 
 import java.util.Observable;
 
+import nl.spookystoriesinc.coolgame.objects.Wombat;
 import android.util.Log;
 
 /**
@@ -23,7 +24,7 @@ public abstract class GameBoard extends Observable {
 	
 	/** The game objects on the board. */
 	private GameObject[][] gameBoard;
-
+	private Wombat wombat;
 	/**
 	 * Create a new game board.
 	 * 
@@ -62,11 +63,24 @@ public abstract class GameBoard extends Observable {
 			throw new IllegalArgumentException("Destination already contains an object");
 		}
 		
-		
+		// if obj is a Wombat: initialize wombat to obj
+				if(obj instanceof Wombat){
+					wombat = (Wombat) obj;
+				}
+				
 		gameBoard[x][y] = obj;
 		obj.setPosition(x,  y);
 	}
 
+	/**
+	 * Retrieves the player object
+	 * 
+	 * @return		The player object
+	 */
+	public GameObject getWombat(){
+		return wombat;
+	}
+	
 	/**
 	 * Move an object on the board.
 	 * 
