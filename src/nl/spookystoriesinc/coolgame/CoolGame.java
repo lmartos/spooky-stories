@@ -60,14 +60,15 @@ public class CoolGame extends Game {
 
 		// Add a player object
 		board.addGameObject(new Wombat(), 0, 5);
-
+		//hallo
+		
 		// Add some rocks
 		board.addGameObject(new Rock(false), 3, 3);
 		board.addGameObject(new Rock(false), 2, 7);
 		board.addGameObject(new Rock(true),  8, 5);
 		board.addGameObject(new Rock(true),  1, 4);
 		board.addGameObject(new Rock(false), 6, 10);
-
+		
 		// Add some leafs
 		board.addGameObject(new Leaf(), 7, 7);
 		board.addGameObject(new Leaf(), 9, 5);
