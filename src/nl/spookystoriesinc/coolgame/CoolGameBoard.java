@@ -1,6 +1,8 @@
 package nl.spookystoriesinc.coolgame;
 
 import nl.spookystoriesinc.model.GameBoard;
+import nl.spookystoriesinc.view.GameBoardView;
+import nl.spookystoriesinc.coolgame.objects.Wombat;
 
 /**
  * The game board for CoolGame.
@@ -20,12 +22,18 @@ public class CoolGameBoard extends GameBoard {
 
 	@Override
 	public void onEmptyTileClicked(int x, int y) {
-		// Nothing to do in this game.
+		// The x pos. and y pos. from the Wombat: FOR LATER!
+		int oldX = getWombat().getPositionX();
+		int oldY = getWombat().getPositionY();
+		
+		// Move the player object to the clicked tile
+		this.moveObject(getWombat(), x, y);
+
 	}
 	
 	@Override
 	public String getBackgroundImg(int mx, int my) {
 		return null;
 	}
-	
+
 }
