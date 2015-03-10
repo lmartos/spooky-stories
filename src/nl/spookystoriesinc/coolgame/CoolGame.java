@@ -67,6 +67,7 @@ public class CoolGame extends Game {
 		board.addGameObject(new Rock(true),  8, 5);
 		board.addGameObject(new Rock(true),  1, 4);
 		board.addGameObject(new Rock(false), 6, 10);
+		//test
 
 		// Add some leafs
 		board.addGameObject(new Leaf(), 7, 7);
