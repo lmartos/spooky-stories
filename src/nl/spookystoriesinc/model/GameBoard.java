@@ -120,11 +120,14 @@ public abstract class GameBoard extends Observable {
 	 * You should call this any time you are done changing things on the board
 	 * and want to make your changes visible.
 	 */
-	public void updateView() {
+	public boolean updateView() {
 		Log.d(TAG, "Updating game view");
 
+		
 		setChanged();
 		notifyObservers();
+		
+		return true;
 	}
 
 	/**

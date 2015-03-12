@@ -59,22 +59,35 @@ public class CoolGame extends Game {
 		board.removeAllObjects();
 
 		// Add a player object
-		board.addGameObject(new Wombat(), 0, 5);
-		//hallo
+		board.addGameObject(new Wombat(), 1, 1);
 		
+		// walls of the game
+		board.addGameObject(new Rock(false), 0,0);
+		board.addGameObject(new Rock(false), 0,1);
+		board.addGameObject(new Rock(false), 0,2);
+		board.addGameObject(new Rock(false), 0,4);
+		board.addGameObject(new Rock(false), 0,5);
+		board.addGameObject(new Rock(false), 0,6);
+		
+		board.addGameObject(new Rock(false), 1,0);
+		board.addGameObject(new Rock(false), 2,0);
+		board.addGameObject(new Rock(false), 3,0);
+		board.addGameObject(new Rock(false), 5,0);
+		board.addGameObject(new Rock(false), 6,0);
+		board.addGameObject(new Rock(false), 7,0);
+		board.addGameObject(new Rock(false), 8,0);
+		
+
 		// Add some rocks
 		board.addGameObject(new Rock(false), 3, 3);
-		board.addGameObject(new Rock(false), 2, 7);
-		board.addGameObject(new Rock(true),  8, 5);
-		board.addGameObject(new Rock(true),  1, 4);
-		board.addGameObject(new Rock(false), 6, 10);
+		board.addGameObject(new Rock(false), 3, 4);
+		board.addGameObject(new Rock(false), 3, 5);
+		board.addGameObject(new Rock(false), 4, 3);
+		board.addGameObject(new Rock(false), 5, 3);
+		
 		
 		// Add some leafs
-		board.addGameObject(new Leaf(), 7, 7);
-		board.addGameObject(new Leaf(), 9, 5);
-		board.addGameObject(new Leaf(), 3, 6);
-		board.addGameObject(new Leaf(), 4, 7);
-		board.addGameObject(new Leaf(), 1, 9);
+		// board.addGameObject(new Leaf(), 7, 7);
 
 		// Redraw the game view
 		board.updateView();
